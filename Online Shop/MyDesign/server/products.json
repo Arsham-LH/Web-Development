@@ -1,0 +1,82 @@
+[{
+        "id": 1,
+        "title": "لپ تاپ 16 اینچی اپل مدل MacBook Pro MVVK2 2019",
+        "description": "صفحه کلید کاملا جدید ، صفحه نمایش بزرگتر ، صدای بهتر و عملکرد سریع تر باعث شده است که MacBook Pro 16 اینچی گزینه ای عالی برای کاربران حرفه ای باشد.",
+        "image": "http://localhost:3000/images/macbook.jpg",
+        "brand": "اپل",
+        "price": "62999000",
+        "release": "2019"
+    },
+    {
+        "id": 2,
+        "title": "لپ تاپ 15 اینچی ایسوس مدل ZenBook UX533FTC-X",
+        "description": "لپ تاپ ایسوس ZenBook UX533FTC یکی از باریک ترین لپ تاپ های زنبوک پرو شرکت ایسوس می باشد",
+        "image": "http://localhost:3000/images/asus.jpg",
+        "brand": "ایسوس",
+        "price": "34600000",
+        "release": "2020"
+    },
+    {
+        "id": 3,
+        "title": "لپ تاپ 15 اینچی مایکروسافت مدل Surface Book 2- B",
+        "description": "نسل هشتم پردازنده‌های سری Core i7 اینتل، حافظه داخلی SSD و 16 گیگابایت رم، از جمله عوامل قدرتمندبودن این دستگاه هستند.",
+        "image": "http://localhost:3000/images/surface.jpg",
+        "brand": "مایکروسافت",
+        "price": "58399000",
+        "release": "2017"
+    },
+    {
+        "id": 4,
+        "title": "لپ تاپ 15.6 اینچی لنوو مدل ThinkPad E590 - A",
+        "description": "شرکت «لنوو» سری لپ‌تاپ‌های محبوب ThinkPad پانزده اینچی خود را به نسل جدید پردازنده‌های اینتل تحت عنوان Kaby Lake R مجهز کرده",
+        "image": "http://localhost:3000/images/thinkpad.jpg",
+        "brand": "لنوو",
+        "price": "15658210",
+        "release": "2019"
+    },
+    {
+        "id": 5,
+        "title": "لپ تاپ 15 اینچی اپل مدل MacBook Pro MPTR2",
+        "description": "صفحه کلید جدید ، صفحه نمایش بزرگتر ، صدای بهتر و عملکرد سریع تر باعث شده است که MacBook Pro 16 اینچی گزینه ای عالی برای کاربران حرفه ای باشد.",
+        "image": "http://localhost:3000/images/macbook2.jpg",
+        "brand": "اپل",
+        "price": "34000000",
+        "release": "2017"
+    },
+    {
+        "id": 6,
+        "title": "لپ تاپ ایسوس 16 اینچی مدل ROG Strix G16 G614JI",
+        "description": "پردازنده Core i9 رم 16GB حافظه 1TB SSD گرافیک 8GB 4070 ا ASUS ROG Strix G16 G614JI Core i9 13980HX 16GB 1TB SSD 8GB 4070 FULL HD ",
+        "image": "./images/asus2.jpg",
+        "brand": "ایسوس",
+        "price": "135500000",
+        "release": "2023"
+    },
+    {
+        "id": 7,
+        "title": "لپتاپ سامسونگ 15.6 اینچی مدل Galaxy Book Flex",
+        "description": "پردازنده Intel Core i7 1065G7-16GB حافظه - 512 گیگابایت SSD - NP950QCG",
+        "image": "./images/samsung.jpg",
+        "brand": "سامسونگ",
+        "price": "214745982",
+        "release": "2020"
+    },
+    {
+        "id": 8,
+        "title": "لپ تاپ اپل 16 اینچی مدل MacBook Pro MUW",
+        "description": "Apple MacBook Pro MUW73 16 2023 M3 Max 48GB RAM 1TB SSD",
+        "image": "./images/macbook3.jpg",
+        "brand": "اپل",
+        "price": "206699000",
+        "release": "2023"
+    },
+    {
+        "id": 9,
+        "title": "لپ تاپ 14 اینچی Vaio Sx14",
+        "description": "8 گیگابایت رم، 256 گیگابایت ssd، گرافیک Intel Uhd، En Ar Backlit Kb، Fingerp Rdr، Ir Hello Cam، Windows 10 Pro، نقره ای",
+        "image": "./images/sony.jpg",
+        "brand": "سونی",
+        "price": "79420140",
+        "release": "2019"
+    }
+]

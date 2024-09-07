@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="BsModif/BsStyles.min.css">
+    <!-- <link rel="stylesheet" href="D:\arsham\FrontEndCourse\Libraries\Bootstrap5.3.3\node_modules\bootstrap\dist\css\bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <title>فروشگاه آنلاین | تماس با ما</title>
+    <style>
+        section {
+            padding: 20px 0;
+        }
+        
+        body {
+            padding-top: 56px;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark" id="contact-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand pe-3 ms-5" href="index.html">
+                    <i class="bi bi-laptop"></i>
+                    <span>
+                            فروشگاه آنلاین
+                        </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contact-main-nav" aria-controls="contact-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse row justify-content-between" id="contact-main-nav">
+                    <ul class="navbar-nav col-12 col-lg-5 mb-3 mb-md-0 me-4">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="index.html">خانه</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="#intro">تماس با ما</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="container-sm">
+                <div class="text-center">
+                    <h2 class="h2 fw-bold">تماس با ما</h2>
+                    <p class="lead text-muted">برای پیگیری یا سوال دربارۀ سفارش و ارسال پیام بهتر است از فرم زیر استفاده کنید.</p>
+                    <hr class="text-primary">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container-sm">
+                <div>
+                    <div id="errorMessage" class="alert alert-danger d-none" role="alert">
+                        اطلاعات نادرست است!
+                    </div>
+                    <div id="successMessage" class="alert alert-success d-none" role="alert">
+                        پیام شما با موفقیت ارسال شد!
+                    </div>
+                </div>
+                <div class="row justify-content-center my-5">
+                    <div class="col-lg-6">
+                        <form id="contact-us-form" novalidate>
+                            <div class="row">
+                                <div class="col-12 col-lg-6" id="form-name">
+                                    <label for="name" class="form-label col-12">نام و نام خانوادگی *</label>
+                                    <div class="mb-4 input-group">
+                                        <span class="input-group-text">
+                                                <i class="bi bi-person-fill text-secondary"></i>
+                                            </span>
+                                        <input type="text" id="name" class="form-control" placeholder="نام و نام خانوادگی">
+                                        <!-- tooltip -->
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6" id="form-email">
+                                    <label for="email" class="form-label col-12">ایمیل *</label>
+                                    <div class="input-group mb-4">
+                                        <span class="input-group-text">
+                                                <i class="bi bi-envelope-fill text-secondary"></i>
+                                            </span>
+                                        <input type="email" id="email" class="form-control" placeholder="email@example.com">
+                                        <!-- tooltip -->
+                                        <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="ایمیل خود را وارد کنید تا از طریق آن به پیامتان پاسخ دهیم">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="form-title">
+                                    <label for="subject" class="form-label col-12">عنوان *</label>
+                                    <div class="mb-4 input-group">
+                                        <span class="input-group-text">
+                                                <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                                            </span>
+                                        <input type="text" id="name" class="form-control" placeholder="عنوان سوال خود را بنویسید">
+                                    </div>
+                                </div>
+                                <div class="col-12" id="form-text">
+                                    <div class="mb-4 mt-5 form-floating">
+                                        <textarea class="form-control" id="query" style="height: 150px" placeholder="query"></textarea>
+                                        <label for="query">متن پیام</label>
+                                    </div>
+                                    <div class="mb-4 text-center">
+                                        <button type="submit" class="btn btn-outline-primary">ارسال</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light text-center text-lg-start" data-bs-theme="dark">
+        <div class="container text-center">
+            <!-- Section: Social media -->
+            <section class="mb-1">
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <!-- Google -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-google"></i>
+                </a>
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <!-- Github -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-1">
+            کپی‌رایت © 2024
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll(".tt"))
+    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+<script src="js/contact.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+<!-- <script src="../../../../../../Libraries/Bootstrap5.3.3/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+<!--The file in the following line was copied from Bootstrap library (path in the line above) because the file in the path above couldn't be loaded-->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./tailwind.js"></script>
+    <script>
+        try {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            vazir: "'Vazir', sans-serif",
+                        },
+                    },
+                },
+            };
+        } catch {}
+    </script>
+    <style type="text/tailwindcss">
+        @layer base { @font-face { font-family: "Vazir"; font-weight: normal; src: url("./fonts/Vazir.ttf"); } @font-face { font-family: "Vazir"; font-weight: bold; src: url("./fonts/Vazir-Bold.ttf"); } } @layer utilities { .max-width-wrapper { @apply max-w-5xl
+        mx-auto px-4; } .primary-gradient { @apply bg-gradient-to-l from-pink-500 via-red-500 to-yellow-500; } .gradient-border { @apply relative before:content-[''] before:absolute before:w-full before:h-full before:primary-gradient before:rounded-md
+        before:-z-50 hover:before:scale-105 before:duration-300 before:transition-transform; } .intro-text{ @apply absolute text-2xl lg:text-6xl font-bold text-rose-700 mx-20 my-20}} @layer components { .ice-cream { @apply gradient-border; } .ice-cream
+        img { @apply w-72 h-60 rounded-md object-cover; } }
+    </style>
+</head>
+
+<body class="font-vazir bg-white min-h-[1000px]">
+    <div id="super-header" class="primary-gradient h-2"></div>
+    <header id="header" class="sticky top-0 bg-amber-200/90 z-10">
+        <nav class="flex items-center justify-between flex-wrap p-6">
+            <div class="flex items-center flex-shrink-0 text-orange-800 mr-6">
+                <!-- <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg> -->
+                <img class="w-[54px] h-[54px] object-contain" src="images/ice-cream-logo.svg" alt="logo">
+                <span class="font-semibold text-xl tracking-tight">گالری بستنی</span>
+            </div>
+            <div class="block lg:hidden">
+                <button class="flex items-center px-3 py-2 border rounded  text-orange-800 border-orange-800 hover:border-transparent hover:text-white hover:bg-orange-800 ">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                        </svg>
+                    </button>
+            </div>
+            <div class="w-full hidden lg:block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-orange-800 hover:text-red-400 mr-4">
+                            خانه
+                        </a>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-orange-800 hover:text-red-400 mr-4">
+                            بستنی ها
+                        </a>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-orange-800 hover:text-red-400 mr-4">
+                            تماس با ما
+                    </a>
+                </div>
+                <div id="search-wrapper" class="relative mx-4">
+                    <img src="images/search.svg" id="search-icon" class="absolute left-4 top-1.5 h-4">
+                    <input type="select" placeholder="قیفی" id="search-input" class="h-full w-full outline-none rounded-full border border-gray-400 text-gray-700 text-sm px-4 py-1">
+                </div>
+
+                <div>
+                    <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-orange-800 border-orange-800 hover:border-transparent hover:text-white hover:bg-orange-800 mt-4 lg:mt-0">سبد خرید</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="hero-wrapper" class="h-[60vh] min-h-[18rem] flex flex-col justify-center items-center bg-[#fff899] relative">
+        <img src="./images/hero.jpg" id="hero-image" class="h-full w-96 object-cover">
+        <div class="intro-text right-0">با چهار قلم خرید</div>
+        <div class="intro-text left-0">قهرمان بستنی ها شو!</div>
+        <img src="./images/wave.svg" id="hero-wave" class="absolute bottom-0 w-full max-h-40">
+    </div>
+    <main class="max-width-wrapper py-10 lg:py-20 flex justify-center flex-wrap gap-4 md:gap-6 lg:gap-8">
+        <figure class="ice-cream">
+            <img src="./images/1.jpg">
+        </figure>
+        <figure class="ice-cream">
+            <img src="./images/2.jpg">
+        </figure>
+        <figure class="ice-cream">
+            <img src="./images/3.jpg">
+        </figure>
+        <figure class="ice-cream">
+            <img src="./images/4.jpg">
+        </figure>
+        <figure class="ice-cream">
+            <img src="./images/5.jpg">
+        </figure>
+        <figure class="ice-cream">
+            <img src="./images/6.jpg">
+        </figure>
+    </main>
+</body>
+
+</html>

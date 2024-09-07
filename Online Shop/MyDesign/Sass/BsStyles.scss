@@ -1,0 +1,13 @@
+$primary: #003366;
+$info: #87CEEB;
+$light: #F0F0F0;
+$primary-emphasis: #2C3E50;
+$info-emphasis: #00A8E8;
+$primary-subtle: #6A7B8D;
+@import "D:/arsham/FrontEnd/FrontEndCourse/Libraries/Bootstrap5.3.3/node_modules/bootstrap/scss/bootstrap.scss";
+@import "D:/arsham/FrontEnd/FrontEndCourse/Libraries/Bootstrap5.3.3/node_modules/bootstrap/scss/_functions";
+@import "D:/arsham/FrontEnd/FrontEndCourse/Libraries/Bootstrap5.3.3/node_modules/bootstrap/scss/_variables";
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+}

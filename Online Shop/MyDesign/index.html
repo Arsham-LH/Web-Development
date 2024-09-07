@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="BsModif/BsStyles.min.css">
+    <!-- <link rel="stylesheet" href="D:\arsham\FrontEndCourse\Libraries\Bootstrap5.3.3\node_modules\bootstrap\dist\css\bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <title>فروشگاه آنلاین</title>
+    <style>
+        section {
+            padding: 40px 0;
+        }
+        
+        body {
+            padding-top: 56px;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark" id="home-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand pe-3 ms-5" href="#intro">
+                    <i class="bi bi-laptop"></i>
+                    <img src="images/cpu (1).svg" alt="" srcset="">
+
+                    <span>
+                            فروشگاه آنلاین
+                        </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse row justify-content-between" id="main-nav">
+                    <ul class="navbar-nav col-12 col-lg-5 mb-3 mb-md-0 me-4">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="#intro">خانه</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#products">محصولات</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contact.html">تماس با ما</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark btn-outline-info col-3 col-md-2 me-5 ms-md-5" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            سبد خرید
+                            <br class="d-block d-md-none">
+                            <i class="bi bi-cart3 mx-2"></i>
+                        </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <h5 class="modal-title fs-5 me-0 h5" id="cartModalLabel">سبد خرید</h5>
+                        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group px-0 py-1" id="cart-items">
+                            <li class="list-group-item fs-6" id="product-1-cart-item">
+                                <div class="row justify-content-between align-items-center">
+                                    <span class="fw-bold col-8 cart-item-title"> آیتم اول</span>
+                                    <div class="row align-items-center col-4">
+                                        <button class="btn btn-link text-dark text-decoration-none col-4 text-center" name="add-item-btn">+</button>
+                                        <span class="col-4 text-center cart-item-count">4</span>
+                                        <button class="btn btn-link text-dark text-decoration-none col-4 text-center" name="remove-item-btn">-</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item fs-6" id="product-2-cart-item">
+                                <div class="row justify-content-between align-items-center">
+                                    <span class="fw-bold col-8 cart-item-title"> آیتم دوم</span>
+                                    <div class="row align-items-center col-4">
+                                        <button class="btn btn-link text-dark text-decoration-none col-4 text-center" name="add-item-btn">+</button>
+                                        <span class="col-4 text-center cart-item-count">13</span>
+                                        <button class="btn btn-link text-dark text-decoration-none col-4 text-center" name="remove-item-btn">-</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary text-center" data-bs-dismiss="modal">بستن</button>
+                        <button type="button" class="btn btn-primary text-center">خرید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div data-bs-spy="scroll" data-bs-target="#home-navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+            <section id="intro">
+                <div class="container-lg vh-100 text-info-emphasis me-3">
+                    <div class="row g-4 justify-content-center justify-content-md-between align-items-center position-relative">
+                        <div class="col-md-6 row text-md-start justify-content-center justify-content-md-start z-1">
+                            <h1 class="text-center text-md-end col-12">
+                                <div class="display-3 fw-bold mb-3">فروشگاه آنلاین</div>
+                                <div class="small fw-light text-info-emphasis">ورود به دنیایی از کیفیت و زیبایی با مجموعه لپتاپ های مدرن و شیک</div>
+                            </h1>
+                            <a href="#products" class="btn btn-primary rounded-pill btn-lg my-3 col-5 col-lg-4">تازه ترین ها</a>
+                        </div>
+                        <!-- Uncomment the following part if you want back to the previous bg -->
+                        <img src="images/Laptop3_small.jpg" alt="Laptop" class="d-block d-md-none col-12 z-0 img-fluid">
+                    </div>
+                </div>
+            </section>
+            <section id="products" class="mt-5 bg-light">
+                <div class="container-md">
+                    <h2 class="fw-bold my-3 pb-4 text-center display-5">محصولات</h2>
+                    <div class="my-3 g-2 d-flex justify-content-center align-items-center align-items-lg-start flex-column flex-lg-row">
+                        <div id="filters" class="col-12 col-md-10 col-lg-3 mx-lg-5 p-1 bg-primary-subtle shadow-lg rounded-4">
+                            <h3 class="my-4 pb-2 border-bottom border-2 border-secondary">فیلتر محصولات</h3>
+                            <div id="price-filter" class="my-4 row justify-content-center">
+                                <label for="priceRange" class="form-label fw-bold fs-5 col-12">
+                                        <h4 class="mb-3">
+                                            <i class="bi bi-tag-fill"></i>
+                                            سقف قیمت
+                                        </h4>
+                                    </label>
+                                <output for="priceRange" id="priceValue" class="text-center fw-bold">0 تومان</output>
+                                <div class="col-10 d-inline">
+                                    <!-- <div class="row"> -->
+                                    <!-- <span class="col-1 fs-6 text-muted text-start">
+                                1,000,000T
+                            </span> -->
+                                    <input type="range" class="form-range col-5" min="10000000" max="300000000" step="1000000" id="priceRange">
+                                    <div class="d-flex justify-content-between fs-6 text-muted" id="min-max-labels">
+                                        <small>0 تومان</small>
+                                        <small>100,000,000 تومان</small>
+                                    </div>
+                                    <!-- <span class="col-1 fs-6 text-muted">
+                                100,000,000T
+                            </span> -->
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <hr class="text-primary w-50">
+                            </div>
+                            <div id="brand-filter" class="mb-3">
+                                <h4>
+                                    <i class="bi bi-check-lg"></i> برند
+                                </h4>
+                                <div class="row fw-light vstack gap-1" id="options">
+                                    <div class="col-12 form-check d-flex align-items-center" id="apple-filter" brand-name="اپل">
+                                        <input class="form-check-input ms-3" type="checkbox" value="اپل" id="apple-check">
+                                        <label class="form-check-label" for="apple-check">
+                                                <div class="row justify-content-start align-items-center">
+                                                    <img src="/images/apple - brand.png" class="ratio ratio-1x1 col-6">
+                                                    <span class="col-5 my-auto">اپل</span>
+                                                </div>
+                                            </label>
+                                    </div>
+                                    <div class="col-12 form-check d-flex align-items-center" id="microsoft-filter" brand-name="مایکروسافت">
+                                        <input class="form-check-input ms-3" type="checkbox" value="مایکروسافت" id="microsoft-check">
+                                        <label class="form-check-label" for="microsoft-check">
+                                                <div class="row justify-content-start align-items-center">
+                                                    <img src="/images/microsoft - brand.png" class="ratio ratio-1x1">
+                                                    <span class="col-5 my-auto">مایکروسافت</span>
+                                                </div>
+                                            </label>
+                                    </div>
+                                    <div class="col-12 form-check d-flex align-items-center" id="samsung-filter" brand-name="سامسونگ">
+                                        <input class="form-check-input ms-3" type="checkbox" value="سامسونگ" id="samsung-check">
+                                        <label class="form-check-label" for="samsung-check">
+                                                <div class="row justify-content-start align-items-center align-items-center">
+                                                    <img src="/images/samsung - brand.png" class="ratio ratio-1x1">
+                                                    <span class="col-5 my-auto">سامسونگ</span>
+                                                </div>
+                                            </label>
+                                    </div>
+                                    <div class="col-12 form-check d-flex align-items-center" id="sony-filter" brand-name="سونی">
+                                        <input class="form-check-input ms-3" type="checkbox" value="سونی" id="sony-check">
+                                        <label class="form-check-label" for="sony-check">
+                                                <div class="row justify-content-start align-items-center">
+                                                    <img src="/images/sony - brand.png" class="ratio ratio-1x1">
+                                                    <span class="col-5 my-auto">سونی</span>
+                                                </div>
+                                            </label>
+                                    </div>
+                                    <div class="col-12 form-check d-flex align-items-center" id="asus-filter" brand-name="ایسوس">
+                                        <input class="form-check-input ms-3" type="checkbox" value="ایسوس" id="asus-check">
+                                        <label class="form-check-label" for="asus-check">
+                                                <div class="row justify-content-start align-items-center">
+                                                    <img src="/images/asus - brand.png" class="ratio ratio-1x1">
+                                                    <span class="col-5 my-auto">ایسوس</span>
+                                                </div>
+                                            </label>
+                                    </div>
+                                    <div class="col-12 form-check d-flex align-items-center" id="lenovo-filter" brand-name="لنوو">
+                                        <input class="form-check-input ms-3" type="checkbox" value="لنوو" id="lenovo-check">
+                                        <label class="form-check-label" for="lenovo-check">
+                                                <div class="row justify-content-start align-items-center">
+                                                    <img src="/images/lenovo - brand.png" class="ratio ratio-1x1">
+                                                    <span class="col-5 my-auto">لنوو</span>
+                                                </div>
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3 col-12 col-lg-9">
+                            <div class="btn-group" id="sort-products">
+                                <button type="button" class="btn btn-info dropdown-toggle rounded-start-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                        مرتب سازی بر اساس
+                                    </button>
+                                <ul class="dropdown-menu text-end bg-dark">
+                                    <li>
+                                        <a type="button" class="dropdown-item btn-sm text-center text-info" id="sort-dir-btn" aria-label="sort-direction">
+                                            <i class="bi bi-arrow-up-short"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider bg-info">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-info" id="brand-sort-btn">برند</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-info" id="price-sort-btn">قیمت</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-info" id="date-sort-btn">تاریخ عرضه</a>
+                                    </li>
+                                </ul>
+                                <span class="badge text-bg-dark text-info rounded-end-0 d-flex align-items-center px-2" id="selected-sort">برند</span>
+                            </div>
+                            <hr class="text-primary">
+                            <div class="row" id="products-list">
+                                <div class="col-12 col-md-5 col-lg-4 my-3 mb-sm-0" id="product-1" brand-name="اپل" price-filt="false" brand-filt="false">
+                                    <div class="card h-100 d-flex">
+                                        <img src="/images/macbook.jpg" class="card-img-top" alt="Laptop Pic">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold text-primary  my-1 py-1 flex-grow-1">لپتاپ 16 اینچی اپل مدل MacBook Pro MVVK2 2019</h5>
+                                            <p class="card-subtitle fw-bold my-1 py-1" name="price">62,999,000 تومان</p>
+                                            <p class="card-text text-muted text-end my-1 py-1">صفحه کلید کاملا جدید، صفحه نمایش بزرگتر - صدای بهتر و عملکرد سریع تر باعث شده است که MacBook Pro 16 اینچی گزینه ای عالی برای کاربران حرفه ای باشد.</p>
+                                            <div class="card-footer">
+                                                <a class="btn btn-light btn-outline-primary w-100" name="add-to-cart-btn">افزودن به سبد خرید</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 my-3 mb-sm-0" id="product-2" brand-name="ایسوس" price-filt="false" brand-filt="false">
+                                    <div class="card h-100 d-flex">
+                                        <img src="/images/asus.jpg" class="card-img-top" alt="Laptop Pic">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold text-primary my-1 py-1 flex-grow-1">لپتاپ 15 اینچی ایسوس مدل ZenBook UX533FTC-X</h5>
+                                            <p class="card-subtitle fw-bold my-1 py-1" name="price">34,600,000 تومان</p>
+                                            <p class="card-text text-muted text-end my-1 py-1">لپتاپ ایسوس ZenBook UX533FTC-X یکی از باریک ترین لپتاپ های زنبوک پرو شرکت ایسوس میباشد</p>
+                                            <div class="card-footer">
+                                                <a class="btn btn-light btn-outline-primary w-100" name="add-to-cart-btn">افزودن به سبد خرید</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 my-3 mb-sm-0" id="product-3" brand-name="مایکروسافت" price-filt="false" brand-filt="false">
+                                    <div class="card h-100 d-flex">
+                                        <img src="/images/surface.jpg" class="card-img-top" alt="Laptop Pic">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold text-primary my-1 py-1 flex-grow-1">لپتاپ 15 اینچی مایکروسافت مدل Surface Book 2- B</h5>
+                                            <p class="card-subtitle fw-bold my-1 py-1" name="price">58,399,000 تومان</p>
+                                            <p class="card-text text-muted text-end my-1 py-1">نسل هشتم پردازنده های سری Core i7 اینتل، حافظه داخلی SSD و 16 گیگابایت رم، از جمله عوامل قدرتمند بودن این دستگاه هستند.</p>
+                                            <div class="card-footer">
+                                                <a class="btn btn-light btn-outline-primary w-100" name="add-to-cart-btn">افزودن به سبد خرید</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 my-3 mb-sm-0" id="product-4" brand-name="لنوو" price-filt="false" brand-filt="false">
+                                    <div class="card h-100 d-flex">
+                                        <img src="/images/thinkpad.jpg" class="card-img-top" alt="Laptop Pic">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold text-primary my-1 py-1 flex-grow-1">لپتاپ 15.6 اینچی لنوو مدل ThinkPad E590 - A</h5>
+                                            <p class="card-subtitle fw-bold my-1 py-1" name="price">15,658,210 تومان</p>
+                                            <p class="card-text text-muted text-end my-1 py-1">شرکت «لنوو» سری لپتاپ‌های محبوب ThinkPad پانزده اینچی خود را به نسل جدید پردازنه‌های اینتل تحت عنوان Kaby Lake R مجهز کرده است.</p>
+                                            <div class="card-footer">
+                                                <a class="btn btn-light btn-outline-primary w-100" name="add-to-cart-btn">افزودن به سبد خرید</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-dark text-light text-center text-lg-start py-3" data-bs-theme="dark">
+        <div class="container text-center">
+            <!-- Section: Social media -->
+            <section class="mb-1">
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <!-- Google -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-google"></i>
+                </a>
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <!-- Github -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="bi bi-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-1">
+            کپی‌رایت © 2024
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+<!-- <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script> -->
+<script src="js/script.js"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+<!-- <script src="../../../../../../Libraries/Bootstrap5.3.3/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+<!--The file in the following line was copied from Bootstrap library (path in the line above) because the file in the path above couldn't be loaded-->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>

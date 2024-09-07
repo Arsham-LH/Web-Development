@@ -1,0 +1,117 @@
+:root {
+    --line-height: 1.5em;
+    --prod-desc-max-lines: 2;
+    /*maximum number of lines for the description of the products*/
+    --prod-title-max-lines: 2;
+    /*maximum number of lines for the title of the products*/
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.ttf');
+    font-weight: bold;
+}
+
+body {
+    font-family: Vazir;
+}
+
+
+/* #options {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+} */
+
+label {
+    user-select: none;
+}
+
+#brand-filter img {
+    box-sizing: content-box;
+    width: 30px !important;
+}
+
+
+/* Comment the following part if you want back to the previous bg*/
+
+#intro,
+#products {
+    box-shadow: 0px 0px 10px 5px rgb(255, 255, 255) inset;
+}
+
+@media (min-width: 768px) {
+    #intro {
+        background-image: url("/images/laptop2-bg.jpg");
+        background-size: cover;
+        background-repeat: round;
+    }
+}
+
+@media (min-width: 992px) {
+    #filters {
+        position: sticky;
+        top: 60px;
+    }
+}
+
+.card-img-top {
+    object-fit: contain;
+    height: 250px;
+}
+
+.card-title {
+    /*box-sizing = content-box --> So that the following height is set only for text, added by a py-1 in bootstrap*/
+    box-sizing: content-box;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * var(--prod-title-max-lines));
+    display: -webkit-box;
+    -webkit-line-clamp: var(--prod-title-max-lines);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#products-list .card-footer a {
+    transition: scale 0.1s linear 0s, translate 0.1s linear 0s;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px 1px;
+}
+
+#products-list .card-footer a:hover {
+    scale: 1.05;
+    translate: 0 10px;
+}
+
+.card-text {
+    box-sizing: content-box;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * var(--prod-desc-max-lines));
+    display: -webkit-box;
+    -webkit-line-clamp: var(--prod-desc-max-lines);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* .cover-img {
+    position: relative;
+}
+
+.cover-img:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    height: 40%;
+} */
